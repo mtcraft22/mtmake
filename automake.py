@@ -32,9 +32,10 @@ if (len(sys.argv[1])>=2):
     print(f"[LOG]: Creating make var for libs: {libs_parsed}")
 
     all_rule_dependecies=""
+    opciones = nolose["opciones"]
     for i in os.listdir(nolose["fuentes"]):
         output.append(f"{i.split('.')[0]}.o:{nolose['fuentes']}/{i}\n")
-        output.append(f"\t{nolose['compilador']} -c {nolose['fuentes']}/{i} $(Include)\n")
+        output.append(f"\t{nolose['compilador']} -c {nolose['fuentes']}/{i} {opciones} $(Include)\n")
         print(f"[LOG]: Added rule for make object file {i.split('.')[0]}.o for file {nolose['fuentes']}/{i} ")
         all_rule_dependecies += f"{i.split('.')[0]}.o "
 

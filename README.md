@@ -2,7 +2,7 @@ mt make allows auto generate c/cpp makefile from a json config file
 
 In a json file :
 {
-    "compilador": set the c/cpp compiler only: (gcc or g++),
+    "compilador": set the c/cpp compiler only: (gcc or g++) maybe clang,
     "fuentes": set the soources folder,
     "directorio_de_cabeceras": set your include path,
     "librerias": set the libs ,
