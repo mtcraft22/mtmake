@@ -4,6 +4,6 @@
     "directorio_de_cabeceras": "../include /usr/include/SDL2",
     "librerias": "SDL2 SDL2_image",
     "directorio_del_ejecutable": "../release",
-    "nombre":"rpg_grafico",
+    "nombre":"vectores",
     "tipo":"app"
 }

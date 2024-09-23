@@ -1,12 +1,10 @@
 {
-    "incluir":"compilaroperaciones.json",
     "compilador":"g++-12",
-    "fuentes": "../src",
+    "fuentes": "../src/operaciones",
     "directorio_de_cabeceras": "../include",
-    "librerias": "vectores",
-    "directorio_del_ejecutable": "../release",
+    "directorio_del_ejecutable": "../lib",
     "directorio_de_librerias":"../lib",
     "nombre":"vectores",
-    "tipo":"app",
+    "tipo":"shared",
     "opciones":"-fPIC"
 }
